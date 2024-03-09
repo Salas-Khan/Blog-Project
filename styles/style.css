@@ -1,0 +1,704 @@
+/* Common & Reset Codes Starts Here */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+html{
+    background-color: #fafafa;
+    scroll-behavior: smooth; 
+}
+
+
+
+
+body{
+    background-color: #efe6e6;
+    width: 95%;
+    max-width: 100%;
+    margin: auto;      
+}
+
+
+
+.justify-text{
+       text-align: justify;
+}
+
+
+
+.text-white{
+       color: #fff;
+}
+
+
+.section-heading{
+         font-size: 5rem;
+         text-align: center;
+         font-family: 'Italianno', cursive;
+         margin-bottom: 2rem;
+}
+
+
+
+.section-center{
+         padding: 5rem 1rem;
+         min-height: 95vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+}
+
+
+
+.btn{
+    background-color: rgb(164, 128, 62);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+/* Common & Reset Codes Ends Here */
+
+
+
+
+
+
+
+
+/* Header Starts Here */
+header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: #fff;
+      padding: 12px 5px;
+
+      /* position: sticky; */
+      top: 0%;
+      z-index: 10;
+      min-height: 5vh;
+}
+
+
+.logo-figure{
+             border: 1px solid white;
+             border-radius: 5px;
+             padding: 10px;
+             margin-left: 5px;
+}
+
+
+.logo{
+      font-size: 2rem; 
+}
+
+
+nav li a{
+       display: inline-block;
+       margin: 10px;
+       padding: 10px;
+       font-size: 12px;
+       font-family: 'Kdam Thmor Pro', sans-serif;
+       text-align: center;
+       text-transform: uppercase;
+       color: #fff;
+       transition: all 0.4s;    
+}
+
+
+
+nav li:last-child{
+         margin-right: 0%;
+}
+
+
+nav li a:hover{
+          background-color: red;
+          border-radius: 3px;
+          
+}
+/* Header Ends Here */
+
+
+
+
+
+
+/* Banner Section Starts Here */
+#blog-banner-section{
+            padding: 4rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+
+.blog-heading{
+            display: inline-block;
+            font-size: 2rem;
+            background-color: black;
+            color: #fff;
+            padding: 7px;
+            margin-bottom: 1rem;
+}
+
+
+.blog-desc{
+          font-size: 16px;
+}
+
+
+
+.banner-img{
+        height: 500px;
+        width: 600px;
+        border: 1px solid black;
+}
+
+
+
+#blog-banner-section article{
+           flex-basis: 50%;
+           margin: 1rem;
+}
+
+
+
+#blog-banner-section aside{
+            flex-basis: 50%;
+            text-align: center;
+}
+/* Banner Section Ends Here */
+
+
+
+
+
+
+
+/* Blog About Starts Here */
+#blog-about{
+         background-color: rgb(107, 101, 101);
+}
+
+
+
+.card-container{
+           display: flex;
+           align-items: center;
+}
+
+
+
+.card{
+      flex: 1;
+      background-color: rgb(183, 183, 175);
+      padding: 2rem 1rem;
+      margin: 0 1rem;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+      align-items: center;
+}
+
+
+
+.card:hover{
+        transform: scale(1.1);
+}
+
+
+
+.card-header{
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+}
+
+
+
+.card-desc{
+         text-align: justify;
+         margin-bottom: 1.5rem;
+}
+
+
+.card-btn{
+        align-items: center;
+        width: 80%;
+}
+/* Blog About Ends Here */
+
+
+
+
+/* Archives Section Starts Here */
+.archives-container{
+           background-color: rgb(159, 144, 144);
+           display: flex;
+           justify-content: space-evenly;
+           padding: 15px;
+           border-top: 1px solid;
+           border-bottom: 1px solid;
+}
+
+
+
+.archives-img{
+         width: 100%;
+         height: 100%;
+         border-radius: 5px;
+         transition: transform 0.3s;
+}
+
+
+.archives-img:hover{
+         transform: scale(1.1);
+}
+
+
+
+.archives-list1{
+       display: flex;
+       text-align: center;
+}
+
+
+
+.archives-list2{
+         margin: 15px;
+}
+/* Archives Section Ends Here */
+
+
+
+
+
+
+/* Blog Post Starts From Here */
+#blog-main{
+      background-color: rgb(234, 182, 114);
+}
+
+
+
+.blog-img{
+      width: 100%;
+      height: 100%;
+}
+
+
+
+.blog-post{
+       width: 65%;
+       background-color: white;
+       display: flex;
+       margin: 17px 0;
+       box-shadow: 0.5px 0.6px 2px 1px black;
+       transition: transform 0.3s;
+}
+
+
+
+.blog-post:hover{
+         transform: scale(1.1);
+}
+
+
+
+
+.blog-post-aside{
+         flex: 1;
+}
+
+
+.blog-content{
+       flex: 2;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       padding: 10px;
+       margin-left: 10px;
+}
+
+
+
+.blog-post-heading{
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      margin-bottom: 4px;
+      font-size: 1.5rem;
+}
+
+
+
+.blog-post-sub-heading{
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+}
+
+
+
+.blog-post-desc{
+       text-align: justify;
+       font-size: 1rem;
+       margin-bottom: 1rem;
+}
+
+
+
+.blog-post-btn{
+      width: 30%;
+}
+/* Blog Post Ends From Here */
+
+
+
+
+
+
+/* Blog Contact Starts here */
+#contact-section{
+       background-color: #655c5c;
+       min-height: 90vh;
+}
+
+
+
+
+#contact-form{
+           padding: 3rem;
+           outline: 1px solid black;
+           margin: 10px;
+           color: #fff;
+           display: flex;
+           flex-direction: column;
+}
+
+
+.form-control{
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+.form-control label{
+         font-size: 1rem;
+         flex: 0.2;
+         margin-bottom: 3px;
+}
+
+
+input,textarea{
+        flex: 0.8;
+        width: 35rem;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+}
+
+
+
+input:hover{
+         background-color: rgb(228, 222, 222);
+}
+
+
+
+textarea{
+      resize: none;
+      height: 13vh;
+}
+
+
+textarea:hover{
+      background-color: rgb(223, 215, 215);
+}
+
+
+
+.form-btn-field{
+          display: flex;
+          justify-content: flex-end;
+}
+
+
+.contact-btn{
+        width: 30%;
+        color: white;
+        text-transform: capitalize;
+        padding: 10px;
+}
+/* Blog Contact Ends here */
+
+
+
+
+
+
+
+/* Footer Starts here */
+footer{
+      background-color: black;
+      padding: 10px;
+      min-height: 5vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+
+.copyright-text{
+       font-size: 1rem;
+       margin-top: 10px;
+}
+
+
+span{
+     color: rgb(225, 15, 15);
+     font-size: 1.4rem;
+
+}
+
+
+.footer-icon{
+       font-size: 2rem;
+       padding: 7px;
+       margin-bottom: 0px;
+}
+/* Footer Ends here */
+
+
+
+
+
+/* Respionsive Starts Here */
+@media (max-width:992px){
+    
+      /* For blog-banner-section starts */
+      #blog-banner-section{
+               flex-direction: column;
+      }   
+
+
+      #blog-banner-section article{
+             max-width: 100%;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             margin-bottom: 2rem;
+      }
+      /* For blog-banner-section ends */
+
+
+
+      /* For blog-about-section starts */
+     .card-container{
+             width: 50%;
+             flex-direction: column;  
+             flex-wrap: wrap;
+     }
+
+
+     .card{
+          margin: 15px;
+     }
+      /* For blog-about-section Ends */
+}
+
+
+
+
+
+
+@media (max-width:768px){
+      
+      /* For blog-banner-section starts */
+      .blog-desc{
+              font-size: 14px;
+        }
+
+
+      #blog-banner-section article{
+                    max-width: 100%;
+        }
+
+
+        .banner-img{
+                   max-width: auto;
+         }
+        /* For blog-banner-section Ends */
+
+
+
+         /* For blog-about-section starts */
+         .card-container{
+                width: 80%;
+         }
+          /* For blog-about-section ends */
+
+
+
+
+          /* For Archives Section Starts Here */
+            #archives{
+                    min-height: auto;
+                    min-width: auto;
+            }
+          /* For Archives Section Ends Here */
+
+
+
+          /* For blog-post-section starts */
+            .blog-post{
+                  flex-direction: column;
+                  width: 80%;
+                  margin: 25px;
+            }
+
+          /* For blog-post-section Ends */
+          
+          
+          
+          
+          
+          /* For blog-Contact-section starts */
+          #contact-section{
+                min-height: auto;
+          }
+          /* For blog-Contact-section Ends */
+}
+
+
+
+
+
+
+
+@media (max-width:600px){
+     
+    /* For Header section starts */
+    .logo{
+         font-size: 4rem;
+     }
+
+     header{
+           flex-direction: column;
+     }
+
+
+     nav li a{
+           display: block;
+           margin-right: 0;
+           margin: 1.5rem 0;
+           text-align: center;
+           font-size: 13px;
+     }
+     /* For Header section Ends */
+
+
+
+     /* For blog-banner-section starts */
+      #blog-banner-section{
+                min-height: auto;
+      } 
+
+      #blog-banner-section article{
+                      max-width: 100%;
+      }     
+
+
+      .banner-img{
+                 width: 90%;
+      }
+     /* For blog-banner-section Ends */
+
+
+
+     /* For blog-about-section starts */
+     .card-container{
+                   width: 90%;
+     }
+      /* For blog-about-section Ends */
+
+
+
+      /* For Archives Section Starts Here */
+      .archives-list1{
+                 flex-wrap: wrap;
+      }
+      /* For Archives Section Ends Here */
+
+
+
+      /* For blog-post-section starts */
+      .blog-post{
+            width: 90%;
+      }
+    /* For blog-post-section Ends */
+
+
+
+
+    /* For blog-Contact-section starts */
+
+    #contact-form{
+              width: 90%;
+     }
+
+
+     .form-control{
+           flex-direction: column;
+           margin-bottom: 1.3rem;
+     }
+
+
+
+     input,textarea{
+            max-width: 100%;
+     }
+/* For blog-Contact-section Ends */
+
+
+
+
+
+
+/* For Footer Section Starts */
+footer{
+       flex-direction: column;
+}
+
+
+
+.copyright-text{
+      margin-top: 30px;
+}
+
+
+
+#menubar2 li{
+      display: flex;
+}
+/* For Footer Section Ends */
+}
+/* Respionsive Ends Here */
